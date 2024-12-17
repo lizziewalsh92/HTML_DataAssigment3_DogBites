@@ -38,12 +38,19 @@ img { width: 100%;
        margin-left: auto;
        margin-right: auto;}
 
-#datawrapper-chart-dn75M, #datawrapper-chart-69wb2 {
-    
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-       padding: 2px;}
+.chart-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    margin: 0 auto; 
+    max-width: 100%; 
+}
+
+.chart-container iframe {
+    flex: 1; 
+    max-width: 48%; 
+    height: 500px; 
+}
 
 
 /*********************************************************************
