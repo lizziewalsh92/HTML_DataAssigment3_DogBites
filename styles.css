@@ -30,9 +30,9 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
 
-   font-family: "Noto Serif", serif;
+   font-family: 'Noto Serif', serif;
    padding: 10px;
-   background-color: f7a391;
+   background-color: #f7a391;
 }
 
 .quote {font-style: italic;}
