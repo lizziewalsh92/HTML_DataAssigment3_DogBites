@@ -52,21 +52,21 @@ img { width: 100%;
 .chart-container iframe {
     flex: 1;
     max-width: 48%;
-    min-height: 600px;  /* Set a minimum height for the iframes */
-    height: 70vh;  /* Adjusted height based on viewport height */
+    min-height: 800px;  /* Set a minimum height for the iframes */
+    height: 90vh;  /* Adjusted height based on viewport height */
     border: none;
     overflow: hidden; /* Prevent content from spilling out of the iframe */
     scrolling: auto; /* Allow scrolling inside the iframe if content overflows */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .chart-container {
         flex-direction: column;  /* Stack the charts on smaller screens */
     }
 
     .chart-container iframe {
         max-width: 100%;  /* Full width for smaller screens */
-        height: 50vh;  /* Adjust height for smaller devices */
+        height: 70vh;  /* Adjust height for smaller devices */
     }
 }
 
