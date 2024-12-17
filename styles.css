@@ -41,20 +41,22 @@ img { width: 100%;
        margin-right: auto;}
 
 .chart-container {
-    display: flex; 
-    justify-content: space-between; 
-    gap: 20px; 
-    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
     max-width: 100%;
-    flex-wrap: wrap;  /* Allows the charts to stack on smaller screens */
+    flex-wrap: wrap;  /* Allow the charts to stack on smaller screens */
 }
 
 .chart-container iframe {
-    flex: 1; 
-    max-width: 48%;  /* Ensure charts are not too wide */
-    height: 60vh;  /* Set a height based on viewport height */
+    flex: 1;
+    max-width: 48%;
+    min-height: 600px;  /* Set a minimum height for the iframes */
+    height: 70vh;  /* Adjusted height based on viewport height */
     border: none;
-    overflow: hidden;  /* Prevent content overflow */
+    overflow: hidden; /* Prevent content from spilling out of the iframe */
+    scrolling: auto; /* Allow scrolling inside the iframe if content overflows */
 }
 
 @media (max-width: 768px) {
