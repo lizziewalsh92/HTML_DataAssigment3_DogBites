@@ -39,31 +39,33 @@ img { width: 100%;
        margin-right: auto;}
 
 .chart-container {
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Space between the charts */
-    gap: 20px; /* Add spacing between charts */
-    margin: 0 auto; /* Center the container */
-    max-width: 100%; /* Ensure the container doesn’t exceed page width */
-    flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    margin: 0 auto; 
+    max-width: 100%;
+    flex-wrap: wrap;  /* Allows the charts to stack on smaller screens */
 }
 
 .chart-container iframe {
-    flex: 1; /* Make each iframe take equal space */
-    max-width: 48%; /* Limit to 50% of the container width */
-    height: auto; /* Adjust height based on content */
-    max-height: 80vh; /* Limit max height to avoid overflow */
+    flex: 1; 
+    max-width: 48%;  /* Ensure charts are not too wide */
+    height: 60vh;  /* Set a height based on viewport height */
     border: none;
+    overflow: hidden;  /* Prevent content overflow */
 }
 
 @media (max-width: 768px) {
     .chart-container {
-        flex-direction: column; /* Stack charts vertically on smaller screens */
+        flex-direction: column;  /* Stack the charts on smaller screens */
     }
 
     .chart-container iframe {
-        max-width: 100%; /* Ensure the charts take full width */
+        max-width: 100%;  /* Full width for smaller screens */
+        height: 50vh;  /* Adjust height for smaller devices */
     }
 }
+
 
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
