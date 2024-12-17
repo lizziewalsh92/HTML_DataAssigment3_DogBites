@@ -44,6 +44,7 @@ img { width: 100%;
     gap: 20px; 
     margin: 0 auto; 
     max-width: 100%;
+    border: 10px;
     flex-wrap: wrap;  /* Allows the charts to stack on smaller screens */
 }
 
@@ -51,7 +52,7 @@ img { width: 100%;
     flex: 1; 
     max-width: 48%;  /* Ensure charts are not too wide */
     height: 60vh;  /* Set a height based on viewport height */
-    border: none;
+    border: 10px;
     overflow: hidden;  /* Prevent content overflow */
 }
 
