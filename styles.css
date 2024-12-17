@@ -32,7 +32,7 @@ h1, h4, p {
 
 .quote {font-style: italic;}
 
-h4 {text-align: center;
+h4 {
    display: block;
    margin: 0 auto;
     font-size: 19px;
