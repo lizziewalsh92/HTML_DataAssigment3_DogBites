@@ -32,6 +32,8 @@ h1, h4, p {
 
 .quote {font-style: italic;}
 
+.bold {font-style: bold;}
+
 img { width: 100%;
  border: 5px;
      display: block;
