@@ -60,11 +60,11 @@ img { width: 100%;
 }
 
 @media (max-width: 900px) {
-    .chart-container {
+    .mycharts {
         flex-direction: column;  /* Stack the charts on smaller screens */
     }
 
-    .chart-container iframe {
+    .mycharts iframe {
         max-width: 100%;  /* Full width for smaller screens */
         height: 70vh;  /* Adjust height for smaller devices */
     }
@@ -75,7 +75,7 @@ img { width: 100%;
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
-@media(min-width: 681px) { #chart { max-width:600px;
+@media(min-width: 681px) { .mycharts { max-width:600px;
         height: 100%;
        }
     /* Any adjustments for tablets and larger go here.
@@ -86,7 +86,7 @@ img { width: 100%;
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 729px) {#chart { max-width:600px;
+@media(min-width: 729px) {.mycharts { max-width:600px;
        height: 100%;
        }
     /* Any adjustments for desktop and larger go here.
