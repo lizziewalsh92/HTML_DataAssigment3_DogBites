@@ -51,9 +51,9 @@ img {  width: 100%;
 
 .mycharts iframe {
     flex: 1;
-    max-width: 48%;
+    max-width: 90%;
     min-height: 800px;  /* Set a minimum height for the iframes */
-    height: 90vh;  /* Adjusted height based on viewport height */
+    height: 100%;  
     border: none;
     overflow: hidden; /* Prevent content from spilling out of the iframe */
     scrolling: auto; /* Allow scrolling inside the iframe if content overflows */
