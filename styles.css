@@ -75,7 +75,7 @@ img {  width: 100%;
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
-@media(min-width: 681px) { .mycharts { max-width:600px;
+@media(min-width: 681px) { .mycharts { max-width:900px;
         height: 100%;
        }
     /* Any adjustments for tablets and larger go here.
@@ -86,7 +86,7 @@ img {  width: 100%;
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 729px) {.mycharts { max-width:600px;
+@media(min-width: 729px) {.mycharts { max-width:900px;
        height: 100%;
        }
     /* Any adjustments for desktop and larger go here.
