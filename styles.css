@@ -19,26 +19,55 @@ You will find this is far easier than the opposite task of using CSS to cram you
 }
 
 html, body {
-    /* Sets default font-size to 16px, ensuring 1em = 16px; */
-   font-family: 'Libre Baskerville', serif;
-   margin: 5px;
-   padding: 2px;
-   background-color: #ffc5b8;
+    font-family: 'Libre Baskerville', serif;
+    margin: 5px;
+    padding: 2px;
+    background: linear-gradient(135deg, #ffc5b8, #ff8474); /* Gradient background */
+    color: #333;
+    transition: background 0.5s ease; /* Smooth background transition */
 }
 
 h1, h4, p {
     font-family: 'Libre Baskerville', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-.quote {font-style: italic;}
+h1 {
+    font-size: 2.5rem;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
 
-.bold {font-weight: 700;}
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
 
-img {  width: 100%;
-       border: 5px;
-       display: block;
-       margin-left: auto;
-       margin-right: auto;}
+.quote {
+    font-style: italic;
+    border-left: 4px solid #ff8474; /* Fancy quote border */
+    padding-left: 10px;
+    color: #555;
+}
+
+.bold {
+    font-weight: 700;
+    color: #444;
+}
+
+img {
+    width: 100%;
+    border: 5px solid #ff8474; /* Adds a solid border to images */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
 
 #datawrapper-chart-sMF8J {
     margin: 0 auto;
@@ -52,15 +81,27 @@ img {  width: 100%;
     border: none;
     overflow: hidden; 
     scrolling: auto; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Shadow for iframe */
 }
 
 @media (min-width: 600px) {
     #datawrapper-chart-sMF8J iframe {
-        max-width: 100%;  /* Full width for smaller screens */
-        height: 70vh;  /* Adjust height for smaller devices */
+        max-width: 100%; 
+        height: 70vh;  
     }
 }
 
+/* Fancy animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 /*********************************************************************
